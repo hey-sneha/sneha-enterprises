@@ -1,0 +1,1037 @@
+/* =========================
+   BASIC RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #172033;
+    background: #ffffff;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   NAVIGATION BAR
+========================= */
+
+header {
+    width: 100%;
+    background: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+    color: #14213d;
+}
+
+.logo span {
+    color: #f97316;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #172033;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f97316;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+/* =========================
+   PREMIUM HERO SECTION
+========================= */
+
+.hero {
+    min-height: 680px;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        url("https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=1800&q=85");
+
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(90deg,
+            rgba(8, 18, 38, 0.96),
+            rgba(8, 18, 38, 0.78),
+            rgba(8, 18, 38, 0.35));
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+
+    padding: 70px 30px;
+    color: white;
+}
+
+.small-title {
+    color: #fb923c;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-size: 72px;
+    line-height: 1.02;
+    letter-spacing: -2px;
+
+    max-width: 750px;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #fb923c;
+}
+
+.hero-description {
+    max-width: 600px;
+
+    font-size: 18px;
+    line-height: 1.7;
+
+    color: #e2e8f0;
+
+    margin-bottom: 32px;
+}
+
+
+/* Hero Buttons */
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+
+    padding: 14px 27px;
+
+    background: #f97316;
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: 700;
+    border-radius: 6px;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ea580c;
+    transform: translateY(-3px);
+}
+
+.whatsapp-btn {
+    background: transparent;
+    border: 2px solid white;
+}
+
+.whatsapp-btn:hover {
+    background: white;
+    color: #14213d;
+}
+
+
+/* Hero Features */
+
+.hero-features {
+    display: flex;
+    gap: 30px;
+
+    margin-top: 50px;
+
+    flex-wrap: wrap;
+}
+
+.hero-feature {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    color: #e2e8f0;
+    font-size: 14px;
+}
+
+.hero-feature strong {
+    width: 23px;
+    height: 23px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #f97316;
+    color: white;
+
+    font-size: 13px;
+}
+
+/* =========================
+   COMMON SECTION
+========================= */
+
+section {
+    padding: 80px 30px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-title p {
+    color: #f97316;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.section-title h2 {
+    font-size: 38px;
+    color: #14213d;
+    margin-top: 5px;
+}
+
+
+/* =========================
+   SPORTS CATEGORIES
+========================= */
+
+.sports-section {
+    background: #f8fafc;
+}
+
+.sports-container {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.sport-card {
+    background: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 12px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+
+    transition: 0.3s;
+}
+
+.sport-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.sport-icon {
+    font-size: 50px;
+    margin-bottom: 12px;
+}
+
+.sport-card h3 {
+    font-size: 21px;
+    color: #14213d;
+}
+
+.sport-card p {
+    color: #64748b;
+    margin-top: 5px;
+}
+
+
+/* =========================
+   PRODUCTS
+========================= */
+
+.products-container {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.product-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-7px);
+}
+
+.product-image {
+    height: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 80px;
+    background: #f1f5f9;
+}
+
+.product-card h3 {
+    padding: 18px 18px 5px;
+    color: #14213d;
+}
+
+.product-card p {
+    padding: 0 18px 15px;
+    color: #64748b;
+}
+
+.product-card a {
+    display: inline-block;
+    margin: 0 18px 20px;
+
+    padding: 9px 16px;
+
+    background: #14213d;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 5px;
+
+    font-weight: 600;
+}
+
+.product-card a:hover {
+    background: #f97316;
+}
+
+
+/* =========================
+   WHY CHOOSE US
+========================= */
+
+.why-section {
+    background: #f8fafc;
+}
+
+.why-container {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.why-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+
+    border-left: 4px solid #f97316;
+}
+
+.why-card h3 {
+    color: #14213d;
+    margin-bottom: 10px;
+}
+
+.why-card p {
+    color: #64748b;
+}
+
+
+/* =========================
+   ABOUT US
+========================= */
+
+.about-section {
+    background: #14213d;
+    color: white;
+}
+
+.about-content {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+}
+
+.about-content h2 {
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.about-content p:not(.small-title) {
+    color: #dbe3ef;
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-container {
+    max-width: 1000px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.contact-card {
+    text-align: center;
+    padding: 30px;
+
+    background: #f8fafc;
+    border-radius: 10px;
+}
+
+.contact-card h3 {
+    color: #14213d;
+    margin-bottom: 10px;
+}
+
+.contact-card p {
+    color: #64748b;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #0b1324;
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+footer h2 {
+    color: #fb923c;
+    margin-bottom: 5px;
+}
+
+footer p {
+    color: #cbd5e1;
+    margin: 5px 0;
+}
+
+.footer-line {
+    max-width: 800px;
+    height: 1px;
+    background: #334155;
+    margin: 25px auto;
+}
+
+.copyright {
+    font-size: 13px;
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+    }
+
+    .products-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .why-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: 550px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero-content>p:not(.small-title) {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        max-width: 200px;
+    }
+
+    .sports-container,
+    .products-container,
+    .why-container,
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title h2 {
+        font-size: 30px;
+    }
+
+    section {
+        padding: 60px 20px;
+    }
+
+    .hero {
+        min-height: 600px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+        letter-spacing: -1px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .hero-features {
+        gap: 15px;
+        flex-direction: column;
+    }
+}
+
+/* =========================
+   SCROLL ANIMATION
+========================= */
+
+.sport-card,
+.product-card,
+.why-card,
+.contact-card {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.sport-card.show,
+.product-card.show,
+.why-card.show,
+.contact-card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* =========================
+   NEW PRODUCT DESIGN
+========================= */
+
+/* =========================
+   FEATURED PRODUCTS
+========================= */
+
+.products-section {
+    background: #ffffff;
+}
+
+.products-container {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.product-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    overflow: hidden;
+
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.07);
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 28px rgba(15, 23, 42, 0.14);
+}
+
+.product-image {
+    height: 175px;
+    overflow: hidden;
+    background: #f1f5f9;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.07);
+}
+
+.product-info {
+    padding: 18px;
+}
+
+.product-category {
+    color: #f97316;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    margin-bottom: 6px;
+}
+
+.product-info h3 {
+    color: #14213d;
+    font-size: 18px;
+    line-height: 1.35;
+    min-height: 49px;
+    margin-bottom: 9px;
+}
+
+.product-price {
+    color: #14213d;
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.product-whatsapp {
+    display: block;
+    padding: 10px 12px;
+
+    background: #25d366;
+    color: #ffffff;
+
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+
+    font-size: 13px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.product-whatsapp:hover {
+    background: #1daa55;
+    transform: translateY(-2px);
+}
+
+.product-image {
+    height: 240px;
+    overflow: hidden;
+    background: #f1f5f9;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.08);
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.category {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: #f97316;
+}
+
+.product-info h3 {
+    padding: 5px 0;
+    font-size: 21px;
+}
+
+.product-info p {
+    padding: 0;
+    margin: 8px 0 18px;
+}
+
+.product-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: 800;
+    color: #14213d;
+}
+
+.enquire-btn {
+    margin: 0 !important;
+    background: #f97316 !important;
+    padding: 9px 15px !important;
+}
+
+.enquire-btn:hover {
+    background: #ea580c !important;
+}
+
+@media (max-width: 900px) {
+
+    .sports-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .sports-container {
+        grid-template-columns: 1fr;
+    }
+
+    .sport-image {
+        height: 250px;
+    }
+
+}
+
+/* =========================
+   COMPACT SPORTS CARDS
+========================= */
+
+.sports-container {
+    max-width: 1000px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.sport-card {
+    max-width: 320px;
+    margin: auto;
+}
+
+.sport-image {
+    width: 100%;
+    height: 160px;
+}
+
+.sport-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 700px) {
+
+    .sports-container {
+        grid-template-columns: 1fr;
+    }
+
+    .sport-card {
+        max-width: 400px;
+        width: 100%;
+    }
+
+    .sport-image {
+        height: 180px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .products-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .products-container {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+    }
+
+    .product-image {
+        height: 190px;
+    }
+}
+
+/* =========================
+   PRODUCT FILTERS
+========================= */
+
+.product-filters {
+    max-width: 1200px;
+    margin: 0 auto 32px;
+
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 9px 17px;
+
+    background: #ffffff;
+    color: #14213d;
+
+    border: 1px solid #cbd5e1;
+    border-radius: 30px;
+
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 700;
+
+    transition: 0.3s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: #14213d;
+    color: #ffffff;
+    border-color: #14213d;
+}
+
+.product-card.hide-product {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .product-filters {
+        justify-content: flex-start;
+    }
+
+    .filter-btn {
+        padding: 8px 13px;
+        font-size: 12px;
+    }
+}
+
+/* =========================
+   GREEN THEME OVERRIDE
+========================= */
+
+body {
+    color: #092328;
+    background: #ffffff;
+}
+
+/* Navbar */
+header {
+    background: #ffffff;
+}
+
+.logo {
+    color: #092328;
+}
+
+.logo span,
+.nav-links a:hover {
+    color: #2a835f;
+}
+
+/* Hero: new background photo */
+.hero {
+    background:
+        linear-gradient(90deg,
+            rgba(9, 35, 40, 0.96),
+            rgba(9, 35, 40, 0.78),
+            rgba(9, 35, 40, 0.35)),
+        url("https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=1800&q=85");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.small-title,
+.section-title p,
+.product-category {
+    color: #8bbb92;
+}
+
+.hero h1 span {
+    color: #8bbb92;
+}
+
+/* Main buttons */
+.btn {
+    background: #2a835f;
+}
+
+.btn:hover {
+    background: #12544f;
+}
+
+.whatsapp-btn {
+    border-color: #8bbb92;
+}
+
+.whatsapp-btn:hover {
+    background: #8bbb92;
+    color: #092328;
+}
+
+/* Headings */
+.section-title h2,
+.sport-info h3,
+.product-info h3,
+.contact-card h3,
+.why-card h3 {
+    color: #092328;
+}
+
+/* Sections and cards */
+.sports-section,
+.why-section {
+    background: #f3f8f4;
+}
+
+.sport-card,
+.product-card,
+.why-card,
+.contact-card {
+    border-color: #d9e9dc;
+}
+
+/* Sports-category links */
+.sport-info a {
+    color: #12544f;
+}
+
+.sport-info a:hover {
+    color: #2a835f;
+}
+
+/* Product filters */
+.filter-btn:hover,
+.filter-btn.active {
+    background: #12544f;
+    border-color: #12544f;
+}
+
+/* Product cards */
+.product-price {
+    color: #12544f;
+}
+
+/* WhatsApp product button */
+.product-whatsapp {
+    background: #2a835f;
+}
+
+.product-whatsapp:hover {
+    background: #12544f;
+}
+
+/* About and footer */
+.about-section {
+    background: #092328;
+}
+
+.hero-feature strong {
+    background: #2a835f;
+}
+
+footer {
+    background: #092328;
+}
+
+footer h2 {
+    color: #8bbb92;
+}
+
+.footer-line {
+    background: #2a835f;
+}
